@@ -7,6 +7,22 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.29-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
+---
+
+## 📑 목차
+
+- [주요 기능](#주요-기능)
+- [빠른 시작](#빠른-시작)
+- [프로젝트 구조](#프로젝트-구조)
+- [기술 스택](#기술-스택)
+- [📖 문서](#문서)
+- [배포](#배포)
+- [향후 계획](#향후-계획)
+- [기여](#기여)
+- [라이선스](#라이선스)
+
+---
+
 ## ✨ 주요 기능
 
 - 📅 **사주 분석**: 생년월일 기반 사주팔자 해석
@@ -228,34 +244,123 @@ OPENAI_MODEL=gpt-4  # 또는 gpt-3.5-turbo, gpt-4-turbo 등
 
 `frontend/app.py` 파일을 수정하여 Streamlit UI를 자유롭게 커스터마이징할 수 있습니다.
 
+## 📖 문서
+
+프로젝트의 상세한 문서를 확인하세요:
+
+### 📘 사용자용 문서
+- **[빠른 시작 가이드](QUICKSTART.md)** - 5분 만에 시작하기
+- **[사용자 매뉴얼](USER_MANUAL.md)** - 웹 UI 및 API 사용법
+- **[문제해결 가이드](TROUBLESHOOTING.md)** - 일반적인 문제와 해결 방법
+
+### 📗 개발자용 문서
+- **[학습 가이드](LEARNING_GUIDE.md)** - 기술 스택별 학습 자료
+- **[API 레퍼런스](API_REFERENCE.md)** - 완전한 API 문서
+- **[배포 가이드](DEPLOYMENT.md)** - Railway, Render, AWS 배포 방법
+- **[기여 가이드](CONTRIBUTING.md)** - 프로젝트 기여 방법
+
+### 📙 기타 문서
+- **[기술명세서](기술명세서_프로젝트용(신오석).docx)** - 프로젝트 기술 명세
+- **참고 논문** - data/ 폴더의 7편 학술 논문
+
+---
+
 ## 📈 향후 계획
 
+### Phase 1: MVP 검증 (완료 ✅)
+- [x] FastAPI 백엔드 구축
+- [x] Streamlit 프론트엔드
+- [x] FAISS 벡터 스토어
+- [x] 배포 준비 완료
+
+### Phase 2: 제품화 (1-2개월)
 - [ ] 사용자 인증 & 프로필 관리
 - [ ] 분석 결과 저장 & 히스토리
 - [ ] 궁합 분석 기능 추가
-- [ ] Flutter 모바일 앱 개발
-- [ ] 일일 운세 푸시 알림
-- [ ] 다국어 지원 (영어, 일본어)
 - [ ] 결제 시스템 통합
+- [ ] SEO 최적화
+
+### Phase 3: 모바일 앱 (2-3개월)
+- [ ] Flutter 앱 개발
+- [ ] 푸시 알림 (일일 운세)
+- [ ] 앱스토어 출시
+- [ ] 마케팅 & 성장
+
+### Phase 4: 확장 (3-6개월)
+- [ ] A/B 테스팅
+- [ ] 다국어 지원 (영어, 일본어)
+- [ ] 프리미엄 기능
+- [ ] 커뮤니티 기능
+
+---
 
 ## 🤝 기여
 
 프로젝트 개선을 위한 기여를 환영합니다!
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+**시작하기 전에** [기여 가이드](CONTRIBUTING.md)를 읽어주세요.
+
+### 간단한 기여 방법
+
+1. 🌟 **Star** 주기 - 프로젝트를 응원해주세요!
+2. 🐛 **버그 제보** - [Issues](https://github.com/pplkjh/saju_mbti_bot/issues)에서
+3. 💡 **아이디어 제안** - [Discussions](https://github.com/pplkjh/saju_mbti_bot/discussions)에서
+4. 📝 **문서 개선** - 오타 수정, 예제 추가 등
+5. 💻 **코드 기여** - Pull Request 환영!
+
+### 초보자 친화적 이슈
+- `good first issue` 라벨 찾아보기
+- `documentation` 작업부터 시작
+- `help wanted` 이슈 확인
 
 ## 📄 라이선스
 
 이 프로젝트는 MIT 라이선스 하에 배포됩니다.
 
-## 📧 문의
+## 💬 커뮤니티 & 지원
 
-문의사항이 있으시면 이슈를 생성해주세요.
+### 질문 및 토론
+- **GitHub Discussions**: 일반적인 질문, 아이디어 공유
+- **GitHub Issues**: 버그 제보, 기능 요청
+
+### 리소스
+- **문서**: 이 README와 docs/ 폴더
+- **API 문서**: http://localhost:8000/docs (실행 후)
+- **예제 코드**: API_REFERENCE.md
+
+### 연락처
+- **GitHub**: [@pplkjh](https://github.com/pplkjh)
+- **Issues**: [문의하기](https://github.com/pplkjh/saju_mbti_bot/issues)
+
+---
+
+## 🏆 Credits
+
+### 개발자
+- **pplkjh** - 프로젝트 제작자
+
+### 참고 자료
+- 사주명리학 학술 논문 (7편)
+- OpenAI GPT-3.5
+- LangChain & FAISS
+
+### 오픈소스 라이브러리
+- FastAPI, Streamlit, LangChain
+- OpenAI, PyMuPDF, FAISS
+
+감사합니다! 🙏
+
+---
+
+## 📊 프로젝트 통계
+
+![GitHub stars](https://img.shields.io/github/stars/pplkjh/saju_mbti_bot?style=social)
+![GitHub forks](https://img.shields.io/github/forks/pplkjh/saju_mbti_bot?style=social)
+![GitHub issues](https://img.shields.io/github/issues/pplkjh/saju_mbti_bot)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pplkjh/saju_mbti_bot)
 
 ---
 
 **Made with ❤️ by pplkjh**
+
+_이 프로젝트는 학습 및 연구 목적으로 제작되었습니다._
